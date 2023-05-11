@@ -1,0 +1,49 @@
+.promo-main__text {
+  background-color: #ed0233;
+  padding: 45px;
+  color: #ffffff;
+  grid-column: 1/2;
+}
+
+.promo-main__image {
+  grid-column: 2/3;
+  height: 100%;
+  object-fit: cover;
+}
+
+.promo-main__condition {
+  font-size: 28px;
+  line-height: 43px;
+  font-weight: 700;
+  margin: 0 0 19px 0;
+}
+
+.promo-main__price {
+  font-size: 70px;
+  line-height: 109px;
+  font-weight: 700;
+  margin: 0 0 35px 0;
+}
+
+.promo-main__description {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.promo-main__button {
+  margin-top: auto;
+  display: block;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: underline;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.promo-main__text {
+  display: flex;
+  flex-direction: column;
+}

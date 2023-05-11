@@ -1,0 +1,29 @@
+.events {
+  width: 100%;
+  padding: 120px 10px 50px;
+  background-color: #ffffff;
+}
+
+.events__wrapper {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  aspect-ratio: 2.32/1;
+}
+
+.events__text {
+  background-color: #ed0233;
+  color: #ffffff;
+  width: 43%;
+  padding: 85px 78px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr;
+}
+
+.events__image {
+  width: 57%;
+  object-fit: cover;
+}

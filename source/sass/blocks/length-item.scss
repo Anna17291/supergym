@@ -1,0 +1,31 @@
+.length-item__button {
+  border: 0;
+  background-color: transparent;
+  position: relative;
+  padding: 0;
+}
+
+.length-item:not(:last-child) {
+  margin-right: 46px;
+}
+
+.length-item__button--current::before {
+  position: absolute;
+  right: 0;
+  bottom: -22px;
+  left: 0;
+  height: 2px;
+  width: auto;
+  background-color: #d10a42;
+  content: "";
+}
+
+.length-item .length-item__button--current {
+  color: #102654;
+}
+
+.length-item__button {
+  color: rgba(16, 38, 84, 0.5);
+  font-size: 20px;
+  line-height: 30px;
+}

@@ -3,7 +3,7 @@
 
 @import "vendor/normalize";
 // Swiper 7.4.1
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -15,6 +15,9 @@
 @import "global/utils";
 @import "global/container";
 
+@import "global/global";
+
+
 // Blocks
 // ---------------------------------
 
@@ -23,6 +26,52 @@
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
+
+@import "blocks/main-header";
+@import "blocks/main-offer";
+@import "blocks/main-offer-list";
+@import "blocks/header-phone";
+@import "blocks/main-offer-name";
+@import "blocks/header-logo";
+@import "blocks/company-description";
+@import "blocks/media";
+@import "blocks/main-products";
+@import "blocks/length-list";
+@import "blocks/length-item";
+@import "blocks/terms-item";
+@import "blocks/terms-price";
+@import "blocks/events";
+@import "blocks/events-text";
+@import "blocks/events-table";
+@import "blocks/events-date";
+@import "blocks/events-value";
+@import "blocks/coachs";
+@import "blocks/coachs-item";
+@import "blocks/coach-text";
+@import "blocks/coach-specefications";
+@import "blocks/advantages";
+@import "blocks/advantages-item";
+@import "blocks/promo";
+@import "blocks/promo-main";
+@import "blocks/promo-secondary";
+@import "blocks/feedback";
+@import "blocks/feedback-item";
+@import "blocks/feedback-text";
+@import "blocks/contacts";
+@import "blocks/form-container";
+@import "blocks/address-list";
+@import "blocks/address";
+@import "blocks/address-list-item";
+@import "blocks/main-footer";
+@import "blocks/navigation-list";
+@import "blocks/navigation-item";
+@import "blocks/footer-social-list";
+@import "blocks/footer-social-item";
+@import "blocks/footer-logo";
+
+
+
+
 
 // ---------------------------------
 

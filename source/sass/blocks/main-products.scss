@@ -1,0 +1,31 @@
+.main-products {
+  min-height: 851px;
+  background-color: #f8f9fc;
+  padding: 120px 10px;
+}
+
+.main-products__wrapper {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-products__header {
+  margin: 0 0 25px 0;
+  font-size: 54px;
+  line-height: 65px;
+  font-family: "Alumni Sans";
+  font-weight: 600;
+  letter-spacing: 3%;
+}
+
+.main-products__terms-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  width: 100%;
+}

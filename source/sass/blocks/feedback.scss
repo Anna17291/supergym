@@ -1,0 +1,38 @@
+.feedback {
+  width: 100%;
+  min-height: 681px;
+  padding: 10px;
+}
+
+.feedback__wrapper {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 20px 0 120px 0;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback__header {
+  margin: 0 0 37px 0;
+  font-size: 54px;
+  line-height: 65px;
+  font-family: "Alumni Sans";
+  font-weight: 600;
+}
+
+.feedback__item {
+  width: 560px;
+  min-height: 242px;
+  background-color: #1c3374;
+  color: #ffffff;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 62px;
+}

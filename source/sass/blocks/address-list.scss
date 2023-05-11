@@ -1,0 +1,24 @@
+.address-list {
+  position: relative;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.address-list__item {
+  width: 170px;
+  min-height: 40px;
+  margin-right: 120px;
+}
+
+.address-list::after {
+  content: "";
+  width: 1px;
+  background-color: #74819c;
+  top: 15px;
+  bottom: 15px;
+  left: 230px;
+  position: absolute;
+}

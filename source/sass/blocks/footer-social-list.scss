@@ -1,0 +1,12 @@
+.footer-social-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: #ffffff;
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-social-list_item:not(:last-child) {
+  margin-right: 11px;
+}

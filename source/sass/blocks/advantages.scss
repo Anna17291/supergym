@@ -1,0 +1,33 @@
+.advantages {
+  width: 100%;
+  background-color: #f8f9fc;
+  padding: 97px 10px 140px;
+  min-height: 664px;
+}
+
+.advantages__wrapper {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.advantages__header {
+  text-align: center;
+  font-size: 54px;
+  line-height: 65px;
+  font-family: "Alumni Sans";
+  font-weight: 600;
+}
+
+.advantages__list {
+  display: grid;
+  padding: 0;
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 60px;
+
+}
+
+.advantages-list__item {
+  position: relative;
+}

@@ -1,0 +1,20 @@
+.terms-price {
+  z-index: 2;
+  position: relative;
+}
+
+.terms-price .terms-price__number {
+  color: #103aae;
+}
+
+.terms-price::after {
+  position: absolute;
+  top: -60px;
+  left: -5px;
+  content: attr(data-shadow);
+  font-size: 100px;
+  line-height: 150px;
+  color: rgba(232, 232, 232, .48);
+  font-weight: 700;
+  z-index: -1;
+}

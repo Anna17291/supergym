@@ -1,0 +1,16 @@
+.media {
+  position: relative;
+  width: 56.9%;
+  height: 100%;
+}
+
+.media__image {
+  width: 100%;
+}
+
+.media__video {
+  position: absolute;
+  z-index: 2;
+  bottom: -25%;
+  left: -8%;
+}

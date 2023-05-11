@@ -1,0 +1,8 @@
+.navigation-item__link {
+  color: inherit;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+}

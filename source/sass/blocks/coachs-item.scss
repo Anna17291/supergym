@@ -1,0 +1,38 @@
+.coachs-item__name {
+  position: absolute;
+  bottom: 20px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+
+.coachs-item__wrapper {
+  position: relative;
+  text-align: center;
+
+}
+
+.coachs-item {
+  box-sizing: border-box;
+}
+
+.coachs-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.coachs-item:hover .coachs-item__name {
+  visibility: hidden;
+}
+
+.coachs-item:hover .coach-text {
+  visibility: visible;
+}
+
+.coachs-item__text {
+  padding: 58px 57px;
+}

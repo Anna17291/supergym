@@ -1,0 +1,32 @@
+.promo-secondary {
+  padding: 35px;
+  color: #1c3374;
+  display: flex;
+  flex-direction: column;
+  border: solid 7px transparent;
+  border-image: linear-gradient(to right bottom, #d10a42, #00359f);
+  -moz-border-image: -moz-linear-gradient(to right bottom, #d10a42, #00359f);
+  -webkit-border-image: -webkit-linear-gradient(to right bottom, #d10a42, #00359f);
+  border-image-slice: 1;
+}
+
+.promo-secondary__header {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30px;
+  margin: 0 0 10px 0;
+}
+
+.promo-secondary__link {
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: inherit;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: auto;
+}
+
+.promo-secondary__description {
+  margin: 0;
+}

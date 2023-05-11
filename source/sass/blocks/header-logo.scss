@@ -1,0 +1,12 @@
+.header-logo__link .logo-link__image {
+  fill: #ffffff;
+
+  &:hover,
+  &:focus {
+    fill: #102654;
+  }
+}
+
+.header-logo__link:hover {
+  fill: #102654;
+}

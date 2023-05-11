@@ -1,0 +1,23 @@
+.contacts {
+  width: 100%;
+  min-height: 337px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.contacts__wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contacts__form {
+  background-color: #102654;
+  padding: 56px 170px 70px 20px;
+}
+
+.contacts__address {
+  background-color: #ffffff;
+  height: 100%;
+  padding: 56px 20px 70px 120px;
+}

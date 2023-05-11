@@ -1,0 +1,25 @@
+.coachs {
+  width: 100%;
+  padding: 10px 10px 170px;
+  min-height: 653px;
+}
+
+.coachs__wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.coachs__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+
+.coachs__header {
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 3%;
+  font-family: "Alumni Sans";
+  font-weight: 600;
+}

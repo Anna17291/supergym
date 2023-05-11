@@ -1,0 +1,7 @@
+.coach-specefications__item {
+  font-size: 14px;
+}
+
+.coach-specefications__item:not(:last-child) {
+  margin-bottom: 14px;
+}
