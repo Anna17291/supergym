@@ -5,12 +5,17 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  max-width: 750px;
 }
 
 .address-list__item {
   width: 170px;
   min-height: 40px;
-  margin-right: 120px;
+
+}
+
+.address-list__item:nth-child(2n+1) {
+  margin-right: 22%;
 }
 
 .address-list::after {

@@ -1,6 +1,6 @@
 .promo-main__text {
   background-color: #ed0233;
-  padding: 45px;
+  padding: 35px 45px 45px;
   color: #ffffff;
   grid-column: 1/2;
 }
@@ -15,14 +15,14 @@
   font-size: 28px;
   line-height: 43px;
   font-weight: 700;
-  margin: 0 0 19px 0;
+  margin: 0 0 -10px 0;
 }
 
 .promo-main__price {
   font-size: 70px;
-  line-height: 109px;
+  line-height: 80px;
   font-weight: 700;
-  margin: 0 0 35px 0;
+  margin: 0 0 15px 0;
 }
 
 .promo-main__description {
@@ -37,10 +37,11 @@
   display: block;
   text-transform: uppercase;
   color: #ffffff;
-  text-decoration: underline;
+  text-decoration: underline solid 1px;
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .promo-main__text {

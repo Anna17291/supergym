@@ -1,25 +1,63 @@
 .coachs {
   width: 100%;
-  padding: 10px 10px 170px;
-  min-height: 653px;
+  padding: 10px 10px 10px;
+  min-height: 603px;
+
+
+  @media (max-width: $tablet-width) {
+    text-align: center;
+  }
 }
 
 .coachs__wrapper {
   max-width: 1160px;
+  width: 100%;
   margin: 0 auto;
+  padding-top: 48px;
+  position: relative;
+
+  @media (max-width: $tablet-width) {
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
+
 
 .coachs__list {
   list-style-type: none;
   display: flex;
   flex-direction: row;
   padding: 0;
+
+  justify-content: center;
 }
 
 .coachs__header {
   font-size: 54px;
   line-height: 65px;
-  letter-spacing: 3%;
+  letter-spacing: 1.3px;
   font-family: "Alumni Sans";
   font-weight: 600;
+  margin: 0 0 27px 0;
+
+  @media (max-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 50px;
+  }
+}
+
+
+.coachs__button {
+  color: #afafaf;
+  top: 65%
+}
+
+.swiper-button-prev {
+  left: -50px;
+}
+
+.swiper-button-next {
+  right: -30px;
 }

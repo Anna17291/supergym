@@ -1,7 +1,8 @@
 .main-footer {
   background-color: #000000;
-  padding: 44px 103px 32px;
+  padding: 25px 103px 32px;
   width: 100%;
+  min-height: 108px;
 }
 
 .main-footer__container {
@@ -16,7 +17,9 @@
 }
 
 .main-footer__navigation {
-  width: 38%;
+  width: 50%;
   display: flex;
   justify-content: center;
+  padding-bottom: 11px;
+  padding-left: 80px;
 }

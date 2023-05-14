@@ -1,7 +1,7 @@
 import Swiper from '../vendor/swiper';
 
 export const initSwiper = () => {
-  const coachSwiper = new Swiper('.coachs-slider', {
+  const coachSwiper = new Swiper('.coachs-slider', {// eslint-disable-line
     direction: 'horizontal',
     loop: true,
 
@@ -14,12 +14,14 @@ export const initSwiper = () => {
 
       768: {
         slidesPerView: 2,
-        slidesPerGroup: 2,
+        slidesPerGroup: 1,
+        spaceBetween: 30,
       },
 
       1200: {
         slidesPerView: 4,
-        slidesPerGroup: 4,
+        slidesPerGroup: 1,
+        spaceBetween: 40,
       },
     },
     // Navigation arrows

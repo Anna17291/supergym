@@ -7,12 +7,16 @@
 
 .length-item:not(:last-child) {
   margin-right: 46px;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 55px;
+  }
 }
 
 .length-item__button--current::before {
   position: absolute;
   right: 0;
-  bottom: -22px;
+  bottom: -14px;
   left: 0;
   height: 2px;
   width: auto;
@@ -28,4 +32,9 @@
   color: rgba(16, 38, 84, 0.5);
   font-size: 20px;
   line-height: 30px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 27px;
+  }
 }

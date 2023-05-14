@@ -5,6 +5,11 @@
   padding: 30px 10px 0;
   z-index: 1;
   min-height: 74px;
+
+  @media (max-width: $tablet-width) {
+    padding: 30px 45px;
+    min-height: 54px;
+  }
 }
 
 .main-header__wrapper {

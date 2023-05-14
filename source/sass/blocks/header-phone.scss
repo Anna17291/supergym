@@ -1,8 +1,26 @@
 .header-phone__link {
   color: #ffffff;
+  font-size: 26px;
+  line-height: 31px;
+  font-weight: 600;
+  font-family: "Alumni Sans";
+  letter-spacing: 0.8px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.4px;
+    margin-top: 5px;
+  }
 
   &:hover,
   &:focus {
     color: #102654;
+  }
+}
+
+.header-phone {
+  @media (max-width: $tablet-width) {
+    margin-top: 2px;
   }
 }

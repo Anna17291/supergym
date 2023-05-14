@@ -1,14 +1,16 @@
 .advantages {
   width: 100%;
   background-color: #f8f9fc;
-  padding: 97px 10px 140px;
+  padding: 95px 10px 120px;
   min-height: 664px;
 }
 
 .advantages__wrapper {
   width: 100%;
-  max-width: 1160px;
+  max-width: 1000px;
   margin: 0 auto;
+  //padding-right: 35px;
+  box-sizing: border-box;
 }
 
 .advantages__header {
@@ -17,15 +19,19 @@
   line-height: 65px;
   font-family: "Alumni Sans";
   font-weight: 600;
+  letter-spacing: 1.5px;
+  margin: 0;
+  padding-left: 7px;
 }
 
 .advantages__list {
   display: grid;
   padding: 0;
-  grid-template-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 60px;
-
+  grid-template-columns: 1fr 0.8fr 1fr;
+  column-gap: 55px;
+  row-gap: 85px;
+  margin: 0;
+  width: 100%;
 }
 
 .advantages-list__item {

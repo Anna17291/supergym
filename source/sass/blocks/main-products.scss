@@ -1,7 +1,12 @@
 .main-products {
   min-height: 851px;
   background-color: #f8f9fc;
-  padding: 120px 10px;
+  padding: 120px 10px 80px;
+  position: relative;
+
+  @media (max-width: $tablet-width) {
+    padding: 100px 10px;
+  }
 }
 
 .main-products__wrapper {
@@ -11,15 +16,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: $tablet-width) {
+    padding: 0 35px;
+  }
 }
 
 .main-products__header {
-  margin: 0 0 25px 0;
+  margin: 0 0 15px 0;
   font-size: 54px;
   line-height: 65px;
   font-family: "Alumni Sans";
   font-weight: 600;
-  letter-spacing: 3%;
+  letter-spacing: 2px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
 }
 
 .main-products__terms-list {
@@ -28,4 +45,42 @@
   flex-direction: row;
   padding: 0;
   width: 100%;
+  margin: 28px 0 0 0;
+  z-index: 3;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 33px;
+  }
+}
+
+.main-products__length-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  border-bottom: solid 2px rgba(120, 120, 120, 0.2);
+  margin: 0 0 10px 0;
+  padding: 0 0 12px 0;
+}
+
+
+.main-products::after {
+  content: "";
+  background-image: url("../img/disks.png");
+  background-repeat: no-repeat;
+  bottom: -70px;
+  right: -35px;
+  width: 321px;
+  height: 412px;
+  z-index: 2;
+  position: absolute;
+
+  @media (max-width: $tablet-width) {
+    bottom: -60px;
+    right: 0;
+    background-image: url("../img/disks-tablet.png");
+    width: 350px;
+    height: 378px;
+  }
 }

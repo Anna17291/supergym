@@ -10,11 +10,17 @@
   margin: 0;
   font-size: 18px;
   line-height: 27px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 
 .events-table__value {
   position: relative;
   margin-right: auto;
+  margin: 0 auto 0 0;
 }
 
 .events-table__value::before {
@@ -26,4 +32,17 @@
   width: auto;
   background-color: #ffffff;
   content: "";
+
+  @media (max-width: $tablet-width) {
+    top: 0;
+    right: 3px;
+  }
+}
+
+.events-table__value:not(:last-child) {
+  margin-bottom: 10px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }

@@ -1,16 +1,43 @@
 .media {
   position: relative;
-  width: 56.9%;
+  width: 60%;
   height: 100%;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .media__image {
   width: 100%;
+
+  @media (max-width: $tablet-width) {
+    aspect-ratio: 1/0.508;
+  }
 }
 
 .media__video {
   position: absolute;
   z-index: 2;
-  bottom: -25%;
-  left: -8%;
+  bottom: -30%;
+  left: -9%;
+  width: 364px;
+
+  @media (max-width: $tablet-width) {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 39.2%;
+    aspect-ratio: 1.593/1;
+  }
+}
+
+.media-video__track {
+  width: 100%;
+
+  @media (max-width: $tablet-width) {
+    //width: 39.2%;
+
+    width: 100%;
+    height: 100%;
+  }
 }
