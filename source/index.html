@@ -68,13 +68,18 @@
                 оборудованных залов для различных видов групповых занятий.</p>
             </div>
             <div class="company-description__media media">
-              <img class="media__image" src="img/gym.jpg" alt="Фотография тренажерного зала." width="760" height="401">
+              <picture>
+                <source media="(max-width: 1099px)" srcset="img/gym-mobile.jpg" width="320" height="313">
+                <img class="media__image" src="img/gym.jpg" alt="Фотография тренажерного зала." width="760"
+                  height="401">
+              </picture>
               <div class="media__video media-video">
 
                 <iframe class="media-video__track" width="364" height="228"
                   src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowfullscreen></iframe>
+
 
               </div>
             </div>
@@ -387,8 +392,8 @@
 
 
             </div>
-            <div class="coachs__button swiper-button-next"></div>
 
+            <div class="coachs__button swiper-button-next"></div>
 
           </div>
 
@@ -442,7 +447,7 @@
               <li class="advantages-list__item advantages-item advantages-item--main">
                 <h3 class="advantages-item__header">100</h3>
                 <p class="advantages-item__unit">Тренажеров</p>
-                <p class="advantages-item__description">Современные тренажеры на все группы мышц</p>
+                <p class="advantages-item__description">Современные тренажеры<br>на все группы мышц</p>
               </li>
             </ul>
           </div>
@@ -457,7 +462,10 @@
                 <p class="promo-main__description">Безлимитный абонемент в тренажерный зал</p>
                 <a class="promo-main__button" href="#">Подробнее</a>
               </div>
-              <img class="promo-main__image" src="img/promo.jpg" alt="Фотография спортсменки.">
+              <picture>
+                <source media="(max-width: 1199px)" srcset="img/promo-tablet.jpg" width="399" height="462">
+                <img class="promo-main__image" src="img/promo.jpg" alt="Фотография спортсменки.">
+              </picture>
             </div>
             <div class="promo__second promo-secondary">
               <h3 class="promo-secondary__header">Месяц бесплатно</h3>

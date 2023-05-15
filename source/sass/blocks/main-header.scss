@@ -10,6 +10,11 @@
     padding: 30px 45px;
     min-height: 54px;
   }
+
+  @media (max-width: $mobile-width) {
+    padding: 10px 15px;
+    align-items: baseline;
+  }
 }
 
 .main-header__wrapper {
@@ -18,6 +23,8 @@
   flex-direction: row;
   justify-content: space-between;
   margin: 0 auto;
+
+
 }
 
 .main-header__phone {

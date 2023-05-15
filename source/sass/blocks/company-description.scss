@@ -8,6 +8,11 @@
     text-align: center;
     padding-top: 63px;
   }
+
+  @media (max-width: $mobile-width) {
+    min-height: 335px;
+    padding: 25px 0;
+  }
 }
 
 .company-description__wrapper {
@@ -21,6 +26,10 @@
     flex-direction: column;
     padding: 0 35px;
     align-items: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0 0 40px 0;
   }
 }
 
@@ -39,6 +48,13 @@
     margin-right: 10px;
     margin-bottom: 0;
   }
+
+  @media (max-width: $mobile-width) {
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+  }
 }
 
 .company-description__determination {
@@ -46,8 +62,14 @@
   line-height: 24px;
   margin: 0 0 38px 0;
 
+
   @media (max-width: $tablet-width) {
     margin-bottom: 34px;
+  }
+
+  @media (max-width: $mobile-width) {
+    letter-spacing: 0;
+    margin-bottom: 25px;
   }
 }
 
@@ -71,5 +93,13 @@
     width: 79%;
     margin-right: 0;
     margin-bottom: 35px;
+  }
+
+  @media (max-width: $mobile-width) {
+    text-align: left;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 24px;
   }
 }

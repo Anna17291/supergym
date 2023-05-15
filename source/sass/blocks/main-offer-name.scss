@@ -13,6 +13,13 @@
     padding-right: 0;
     margin-bottom: 5px;
   }
+
+  @media (max-width: $mobile-width) {
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 1.8px;
+    margin-bottom: 11px;
+  }
 }
 
 .main-offer-name__company {
@@ -29,6 +36,8 @@
     letter-spacing: 2px;
     margin-bottom: 40px;
   }
+
+
 }
 
 .main-offer-name__button {
@@ -48,6 +57,17 @@
   @media (max-width: $tablet-width) {
     width: 183px;
     min-height: 60px;
+  }
+
+  @media (max-width: $mobile-width) {
+    position: absolute;
+    bottom: -44px;
+    width: 98%;
+    left: 1%;
+    min-height: 63px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    letter-spacing: 0.5px;
   }
 
   &:hover,

@@ -1,5 +1,9 @@
 .header-logo {
   margin-top: 10px;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 5px;
+  }
 }
 
 .header-logo__link .logo-link__image {

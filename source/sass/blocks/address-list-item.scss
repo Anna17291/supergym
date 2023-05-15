@@ -2,6 +2,12 @@
   color: inherit;
   font-size: 14px;
   margin: 0 0 15px 0;
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
 }
 
 .address-list-item__point {
@@ -9,4 +15,9 @@
   margin: 0 0 5px 0;
   font-size: 16px;
   line-height: 24px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

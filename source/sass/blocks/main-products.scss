@@ -7,6 +7,11 @@
   @media (max-width: $tablet-width) {
     padding: 100px 10px;
   }
+
+  @media (max-width: $mobile-width) {
+    padding: 65px 10px 75px;
+    min-height: 1487px;
+  }
 }
 
 .main-products__wrapper {
@@ -19,6 +24,10 @@
 
   @media (max-width: $tablet-width) {
     padding: 0 35px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0 5px;
   }
 }
 
@@ -37,6 +46,11 @@
     margin-right: 10px;
     margin-bottom: 20px;
   }
+
+  @media (max-width: $mobile-width) {
+    font-size: 32px;
+    line-height: 38px;
+  }
 }
 
 .main-products__terms-list {
@@ -52,6 +66,10 @@
     flex-direction: column;
     align-items: center;
     margin-top: 33px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 23px;
   }
 }
 
@@ -82,5 +100,9 @@
     background-image: url("../img/disks-tablet.png");
     width: 350px;
     height: 378px;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: none;
   }
 }

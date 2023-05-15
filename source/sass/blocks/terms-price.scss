@@ -17,4 +17,9 @@
   color: rgba(232, 232, 232, .48);
   font-weight: 700;
   z-index: -1;
+
+  @media (max-width: $mobile-width) {
+    font-size: 80px;
+    left: -10px;
+  }
 }

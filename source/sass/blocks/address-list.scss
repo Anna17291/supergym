@@ -6,16 +6,36 @@
   flex-direction: row;
   flex-wrap: wrap;
   max-width: 750px;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 }
 
 .address-list__item {
   width: 170px;
   min-height: 40px;
 
+  @media (max-width: $tablet-width) {
+    width: 42%;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
 }
 
 .address-list__item:nth-child(2n+1) {
   margin-right: 22%;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 9%;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-right: 0;
+  }
 }
 
 .address-list::after {
@@ -26,4 +46,14 @@
   bottom: 15px;
   left: 230px;
   position: absolute;
+
+  @media (max-width: $tablet-width) {
+    left: 43.1%;
+    top: 8px;
+    bottom: 30px;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }

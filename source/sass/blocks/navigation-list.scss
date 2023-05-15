@@ -5,10 +5,16 @@
   flex-direction: row;
   flex-wrap: wrap;
   padding: 0;
+
+
 }
 
 .navigation-list__item:not(:last-child) {
   margin-right: 8.2%;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 30px;
+  }
 }
 
 .footer-navigation__wrapper {

@@ -5,10 +5,15 @@
   font-family: "Alumni Sans";
   margin: 0 0 35px 0;
   letter-spacing: 1px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 33px;
+  }
 }
 
 .address {
   border-top: solid 1px #74819c;
   margin: 0;
-
 }

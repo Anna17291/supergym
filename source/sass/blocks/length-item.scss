@@ -3,6 +3,19 @@
   background-color: transparent;
   position: relative;
   padding: 0;
+  color: rgba(16, 38, 84, 0.5);
+  font-size: 20px;
+  line-height: 30px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .length-item:not(:last-child) {
@@ -10,6 +23,10 @@
 
   @media (max-width: $tablet-width) {
     margin-right: 55px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-right: 45px;
   }
 }
 
@@ -26,15 +43,4 @@
 
 .length-item .length-item__button--current {
   color: #102654;
-}
-
-.length-item__button {
-  color: rgba(16, 38, 84, 0.5);
-  font-size: 20px;
-  line-height: 30px;
-
-  @media (max-width: $tablet-width) {
-    font-size: 18px;
-    line-height: 27px;
-  }
 }

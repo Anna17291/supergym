@@ -1,8 +1,12 @@
 .main-footer {
   background-color: #000000;
-  padding: 25px 103px 32px;
   width: 100%;
-  min-height: 108px;
+  min-height: 165px;
+  padding: 10px;
+
+  @media (max-width: $tablet-width) {
+    min-height: 114px;
+  }
 }
 
 .main-footer__container {
@@ -14,6 +18,12 @@
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 93px 22px;
+
+  @media (max-width: $tablet-width) {
+    padding: 20px 29px 10px 35px;
+    //margin-bottom: 10px;
+  }
 }
 
 .main-footer__navigation {
@@ -22,4 +32,9 @@
   justify-content: center;
   padding-bottom: 11px;
   padding-left: 80px;
+
+  @media (max-width: $tablet-width) {
+    width: 60%;
+    padding: 0 0 0 15px;
+  }
 }
