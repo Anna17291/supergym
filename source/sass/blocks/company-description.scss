@@ -7,6 +7,7 @@
     min-height: 854px;
     text-align: center;
     padding-top: 63px;
+    padding-bottom: 183px;
   }
 
   @media (max-width: $mobile-width) {
@@ -37,7 +38,7 @@
   font-size: 48px;
   line-height: 58px;
   margin: 0 0 10px 0;
-  font-family: "Alumni Sans";
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   letter-spacing: 1.5px;
 
@@ -61,7 +62,6 @@
   font-size: 18px;
   line-height: 24px;
   margin: 0 0 38px 0;
-
 
   @media (max-width: $tablet-width) {
     margin-bottom: 34px;

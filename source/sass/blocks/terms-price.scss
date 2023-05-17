@@ -1,6 +1,5 @@
 .terms-price {
   z-index: 2;
-  position: relative;
 }
 
 .terms-price .terms-price__number {
@@ -9,8 +8,9 @@
 
 .terms-price::after {
   position: absolute;
-  top: -60px;
-  left: -10px;
+  width: 100%;
+  top: 133px;
+  left: 0;
   content: attr(data-shadow);
   font-size: 100px;
   line-height: 150px;

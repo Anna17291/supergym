@@ -13,23 +13,74 @@
   }
 }
 
+.feedback__button {
+  cursor: pointer;
+  color: transparent;
+}
+
 .feedback__button--prev {
-  left: 50px;
+  left: 43px;
   top: 50%;
+
+  @media (max-width: $tablet-width) {
+    top: 51%;
+    left: 35px;
+  }
 
   @media (max-width: $mobile-width) {
     left: 0;
-    top: 55%;
+    top: 56%;
+  }
+}
+
+.feedback__button--prev::before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  background-color: transparent;
+  border: solid 1px #afafaf;
+  transform: rotate(45deg);
+  border-top: none;
+  border-right: none;
+  cursor: pointer;
+
+  @media (max-width: $mobile-width) {
+    width: 15px;
+    height: 15px;
   }
 }
 
 .feedback__button--next {
-  right: 50px;
+  right: 43px;
   top: 50%;
+
+  @media (max-width: $tablet-width) {
+    top: 51%;
+    right: 35px;
+  }
 
   @media (max-width: $mobile-width) {
     right: 0;
-    top: 55%;
+    top: 56%;
+  }
+}
+
+.feedback__button--next::before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  background-color: transparent;
+  border: solid 1px #afafaf;
+  transform: rotate(45deg);
+  border-bottom: none;
+  border-left: none;
+  cursor: pointer;
+
+  @media (max-width: $mobile-width) {
+    width: 15px;
+    height: 15px;
   }
 }
 
@@ -60,7 +111,7 @@
   margin: 0 0 20px 0;
   font-size: 54px;
   line-height: 65px;
-  font-family: "Alumni Sans";
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   letter-spacing: 2px;
   padding-left: 3px;
@@ -99,7 +150,6 @@
     text-align: center;
     position: relative;
     padding: 25px 25px 30px;
-
     max-width: 70vw;
   }
 }

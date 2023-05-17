@@ -25,7 +25,7 @@ export const initSwiper = () => {
         spaceBetween: 40,
       },
     },
-    // Navigation arrows
+
     navigation: {
       prevEl: '.coachs__button--prev',
       nextEl: '.coachs__button--next',
@@ -33,14 +33,11 @@ export const initSwiper = () => {
   });
 };
 
-
 export const initSwiperFeedback = () => {
   const coachSwiper = new Swiper('.feedback-slider', {// eslint-disable-line
     direction: 'horizontal',
-
     slidesPerView: 1,
 
-    // Navigation arrows
     navigation: {
       prevEl: '.feedback__button--prev',
       nextEl: '.feedback__button--next',

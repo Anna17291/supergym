@@ -9,6 +9,11 @@
     content="Спорт, фитнес, тренажерный зал, тренажеры, фитнес-центр, бассейн, групповые занятия спортом, индивидуальные занятия спортом">
   <title>Фитнес-центр Supergym</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/Robotocondensed.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Robotocondensedlight.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Robotocondensedbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/AlumniSans-SemiBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/AlumniSans-ExtraBold.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body>
@@ -16,11 +21,13 @@
     <header class="main-header">
       <div class="main-header__wrapper">
         <section class="main-header__logo header-logo">
+          <h2 class="visually-hidden">Логотип.</h2>
           <a class="header-logo__link logo-link" href="index.html">
             <img class="logo-link__image" src="img/svg/logo.svg" width="122" height="44" alt="Логотип Supergym.">
           </a>
         </section>
         <section class="main-header__phone header-phone">
+          <h2 class="visually-hidden">Телефон.</h2>
           <a class="header-phone__link" href="tel:88005555555">8-800-555-55-55</a>
         </section>
       </div>
@@ -48,8 +55,8 @@
               <h2 class="main-offer-name__company">Фитнес<br>центр</h2>
               <a class="main-offer-name__button" href="#main-products">Купить абонемент</a>
             </div>
-            <img class="main-offer__image" src="img/main-offer.jpg" alt="Фотография спортсмена." width="500"
-              height="556">
+            <img class="main-offer__image" src="img/main-offer.webp" srcset="img/main-offer-2x.webp 2x"
+              alt="Фотография спортсмена." width="500" height="556">
           </div>
         </section>
         <section class="page-main__company-description company-description">
@@ -71,21 +78,18 @@
             </div>
             <div class="company-description__media media">
               <picture>
-                <source media="(max-width: 1099px)" srcset="img/gym-mobile.jpg" width="320" height="313">
-                <img class="media__image" src="img/gym.jpg" alt="Фотография тренажерного зала." width="760"
-                  height="401">
+                <source media="(max-width: 767px)" srcset="img/gym-mobile.webp 1x, img/gym-mobile-2x.webp 2x"
+                  width="320" height="313">
+                <img class="media__image" src="img/gym.webp" srcset="img/gym-2x.webp 2x"
+                  alt="Фотография тренажерного зала." width="760" height="401">
               </picture>
               <div class="media__video media-video">
-
-                <iframe class="media-video__track" width="364" height="228"
-                  src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1" title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen></iframe>
-
-                <button class="media-video__button"></button>
-
-
+                <div class="media-video__wrapper">
+                  <div class="media-video__video" data-video-container
+                    data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
+                  </div>
+                  <button class="media-video__button"></button>
+                </div>
               </div>
             </div>
           </div>
@@ -133,21 +137,21 @@
               <li class="terms-list__item terms-item" tabindex="0">
                 <h3 class="terms-item__header">С тренером</h3>
                 <p class="terms-item__description">72 занятия</p>
-                <p class="terms-item__price terms-price" data-shadow="20 000"><span class="terms-price__number">25
+                <p class="terms-item__price terms-price" data-shadow="20 000"><span class="terms-price__number">20
                     000</span>₽</p>
                 <a class="terms-item__button" href="#">Купить абонемент</a>
               </li>
               <li class="terms-list__item terms-item" tabindex="0">
                 <h3 class="terms-item__header">Дневной</h3>
                 <p class="terms-item__description">С 8:00 до 17:00</p>
-                <p class="terms-item__price terms-price" data-shadow="12 500"><span class="terms-price__number">8 500
+                <p class="terms-item__price terms-price" data-shadow="12 500"><span class="terms-price__number">12 500
                   </span>₽</p>
                 <a class="terms-item__button" href="#">Купить абонемент</a>
               </li>
               <li class="terms-list__item terms-item" tabindex="0">
                 <h3 class="terms-item__header">Полный день</h3>
                 <p class="terms-item__description">С 8:00 до 22:00</p>
-                <p class="terms-item__price terms-price" data-shadow="7 000"><span class="terms-price__number">13 500
+                <p class="terms-item__price terms-price" data-shadow="17 500"><span class="terms-price__number">17 500
                   </span>₽</p>
                 <a class="terms-item__button" href="#">Купить абонемент</a>
               </li>
@@ -156,21 +160,21 @@
               <li class="terms-list__item terms-item" tabindex="0">
                 <h3 class="terms-item__header">С тренером</h3>
                 <p class="terms-item__description">144 занятия</p>
-                <p class="terms-item__price terms-price" data-shadow="30 000"><span class="terms-price__number">45 000
+                <p class="terms-item__price terms-price" data-shadow="33 000"><span class="terms-price__number">33 000
                   </span>₽</p>
                 <a class="terms-item__button" href="#">Купить абонемент</a>
               </li>
               <li class="terms-list__item terms-item" tabindex="0">
                 <h3 class="terms-item__header">Дневной</h3>
                 <p class="terms-item__description">С 8:00 до 17:00</p>
-                <p class="terms-item__price terms-price" data-shadow="20 300"><span class="terms-price__number">15 300
+                <p class="terms-item__price terms-price" data-shadow="17 800"><span class="terms-price__number">17 800
                   </span>₽</p>
                 <a class="terms-item__button" href="#">Купить абонемент</a>
               </li>
               <li class="terms-list__item terms-item" tabindex="0">
                 <h3 class="terms-item__header">Полный день</h3>
                 <p class="terms-item__description">С 8:00 до 22:00</p>
-                <p class="terms-item__price terms-price" data-shadow="15 300"><span class="terms-price__number">24 300
+                <p class="terms-item__price terms-price" data-shadow="24 150"><span class="terms-price__number">24 150
                   </span>₽</p>
                 <a class="terms-item__button" href="#">Купить абонемент</a>
               </li>
@@ -197,7 +201,7 @@
               <p class="events-text__description">Ежегодные соревнования по CrossFit</p>
               <a class="events-text__button" href="#">Заполнить заявку</a>
             </div>
-            <img class="events__image" src="img/sg.jpg" width="650" height="500"
+            <img class="events__image" src="img/sg.webp" srcset="img/sg-2x.webp 2x" width="650" height="500"
               alt="Фотография участника соревнований по Cross-Fit.">
           </div>
         </section>
@@ -209,8 +213,8 @@
               <ul class="coachs__list coachs-list swiper-wrapper">
                 <li class="coachs-list__item coachs-item swiper-slide" tabindex="0">
                   <div class="coachs-item__wrapper">
-                    <img class="coachs-item__image" src="img/coach1.jpg" width="260" height="294"
-                      alt="Фотография тренера Анны Павловой">
+                    <img class="coachs-item__image" src="img/coach1.webp" srcset="img/coach1-2x.webp 2x" width="260"
+                      height="294" alt="Фотография тренера Анны Павловой">
                     <h3 class="coachs-item__name">Анна Павлова</h3>
                   </div>
                   <div class="coachs-item__text coach-text">
@@ -231,8 +235,8 @@
                 </li>
                 <li class="coachs-list__item coachs-item swiper-slide" tabindex="0">
                   <div class="coachs-item__wrapper">
-                    <img class="coachs-item__image" src="img/coach2.jpg" width="260" height="294"
-                      alt="Фотография тренера Алексея Лаврова">
+                    <img class="coachs-item__image" src="img/coach2.webp" srcset="img/coach2-2x.webp 2x" width="260"
+                      height="294" alt="Фотография тренера Алексея Лаврова">
                     <h3 class="coachs-item__name">Алексей Лавров</h3>
                   </div>
                   <div class="coachs-item__text coach-text">
@@ -253,8 +257,8 @@
                 </li>
                 <li class="coachs-list__item coachs-item swiper-slide" tabindex="0">
                   <div class="coachs-item__wrapper">
-                    <img class="coachs-item__image" src="img/coach3.jpg" width="260" height="294"
-                      alt="Фотография тренера Александра Пашкова">
+                    <img class="coachs-item__image" src="img/coach3.webp" srcset="img/coach3-2x.webp 2x" width="260"
+                      height="294" alt="Фотография тренера Александра Пашкова">
                     <h3 class="coachs-item__name">Александр Пашков</h3>
                   </div>
                   <div class="coachs-item__text coach-text">
@@ -275,8 +279,8 @@
                 </li>
                 <li class="coachs-list__item coachs-item swiper-slide" tabindex="0">
                   <div class="coachs-item__wrapper">
-                    <img class="coachs-item__image" src="img/coach4.jpg" width="260" height="294"
-                      alt="Фотография тренера Марии Кетовой">
+                    <img class="coachs-item__image" src="img/coach4.webp" srcset="img/coach4-2x.webp 2x" width="260"
+                      height="294" alt="Фотография тренера Марии Кетовой">
                     <h3 class="coachs-item__name">Мария Кетова</h3>
                   </div>
                   <div class="coachs-item__text coach-text">
@@ -297,8 +301,8 @@
                 </li>
                 <li class="coachs-list__item coachs-item swiper-slide" tabindex="0">
                   <div class="coachs-item__wrapper">
-                    <img class="coachs-item__image" src="img/coach1.jpg" width="260" height="294"
-                      alt="Фотография тренера Анны Павловой">
+                    <img class="coachs-item__image" src="img/coach1.webp" srcset="img/coach1-2x.webp 2x" width="260"
+                      height="294" alt="Фотография тренера Анны Павловой">
                     <h3 class="coachs-item__name">Анна Павлова</h3>
                   </div>
                   <div class="coachs-item__text coach-text">
@@ -319,8 +323,8 @@
                 </li>
                 <li class="coachs-list__item coachs-item swiper-slide" tabindex="0">
                   <div class="coachs-item__wrapper">
-                    <img class="coachs-item__image" src="img/coach2.jpg" width="260" height="294"
-                      alt="Фотография тренера Алексея Лаврова">
+                    <img class="coachs-item__image" src="img/coach2.webp" srcset="img/coach2-2x.webp 2x" width="260"
+                      height="294" alt="Фотография тренера Алексея Лаврова">
                     <h3 class="coachs-item__name">Алексей Лавров</h3>
                   </div>
                   <div class="coachs-item__text coach-text">
@@ -341,8 +345,8 @@
                 </li>
                 <li class="coachs-list__item coachs-item swiper-slide" tabindex="0">
                   <div class="coachs-item__wrapper">
-                    <img class="coachs-item__image" src="img/coach3.jpg" width="260" height="294"
-                      alt="Фотография тренера Александра Пашкова">
+                    <img class="coachs-item__image" src="img/coach3.webp" srcset="img/coach3-2x.webp 2x" width="260"
+                      height="294" alt="Фотография тренера Александра Пашкова">
                     <h3 class="coachs-item__name">Александр Пашков</h3>
                   </div>
                   <div class="coachs-item__text coach-text">
@@ -363,8 +367,8 @@
                 </li>
                 <li class="coachs-list__item coachs-item swiper-slide" tabindex="0">
                   <div class="coachs-item__wrapper">
-                    <img class="coachs-item__image" src="img/coach4.jpg" width="260" height="294"
-                      alt="Фотография тренера Марии Кетовой">
+                    <img class="coachs-item__image" src="img/coach4.webp" srcset="img/coach4-2x.webp 2x" width="260"
+                      height="294" alt="Фотография тренера Марии Кетовой">
                     <h3 class="coachs-item__name">Мария Кетова</h3>
                   </div>
                   <div class="coachs-item__text coach-text">
@@ -453,9 +457,12 @@
                 <a class="promo-main__button" href="#">Подробнее</a>
               </div>
               <picture>
-                <source media="(max-width: 767px)" srcset="img/promo-mobile.jpg" width="290" height="299">
-                <source media="(max-width: 1199px)" srcset="img/promo-tablet.jpg" width="399" height="462">
-                <img class="promo-main__image" src="img/promo.jpg" alt="Фотография спортсменки.">
+                <source media="(max-width: 767px)" srcset="img/promo-mobile.webp 1x, img/promo-mobile-2x.webp 2x"
+                  width="290" height="299">
+                <source media="(max-width: 1199px)" srcset="img/promo-tablet.webp 1x, img/promo-tablet-2x.webp 2x"
+                  width="399" height="462">
+                <img class="promo-main__image" src="img/promo.webp" srcset="img/promo-2x.webp"
+                  alt="Фотография спортсменки." width="280" height="462">
               </picture>
             </div>
             <div class="promo__second promo-secondary">
@@ -475,13 +482,12 @@
             <h2 class="feedback__header">
               Отзывы
             </h2>
-
             <div class="feedback__button feedback__button--prev swiper-button-prev"></div>
             <div class="feedback__slider feedback-slider swiper">
               <ul class="feedback__list swiper-wrapper">
-
                 <li class="feedback__item feedback-item swiper-slide">
-                  <img class="feedback-item__image" src="img/feedback.jpg" alt="Фотография пользователя.">
+                  <img class="feedback-item__image" src="img/feedback.webp" srcset="img/feedback-2x.webp"
+                    alt="Фотография пользователя." width="80" height="80">
                   <div class="feedback-item__text feedback-text">
                     <h3 class="feedback-text__name">Анна Орлова</h3>
                     <p class="feedback-text__message">&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что
@@ -489,9 +495,9 @@
                       даже в&nbsp;вечернее время нет очередей&raquo;</p>
                   </div>
                 </li>
-
                 <li class="feedback__item feedback-item swiper-slide">
-                  <img class="feedback-item__image" src="img/feedback.jpg" alt="Фотография пользователя.">
+                  <img class="feedback-item__image" src="img/feedback.webp" srcset="img/feedback-2x.webp"
+                    alt="Фотография пользователя." width="80" height="80">
                   <div class="feedback-item__text feedback-text">
                     <h3 class="feedback-text__name">Анна Орлова</h3>
                     <p class="feedback-text__message">&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что
@@ -499,11 +505,9 @@
                       даже в&nbsp;вечернее время нет очередей&raquo;</p>
                   </div>
                 </li>
-
               </ul>
             </div>
             <div class="feedback__button feedback__button--next swiper-button-next"></div>
-
           </div>
         </section>
         <section class="page-main__contacts contacts">
@@ -558,6 +562,7 @@
     <footer class="main-footer">
       <div class="main-footer__container">
         <section class="main-footer__logo footer-logo">
+          <h2 class="visually-hidden">Логотип</h2>
           <a class="footer-logo__link" href="#index.html">
             <img class="footer-logo__image" src="img/svg/logo.svg" width="88" height="32"
               alt="Логотип фитнес-центра Supergym.">

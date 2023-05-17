@@ -1,8 +1,18 @@
+.address {
+  border-top: solid 1px #74819c;
+  margin: 0;
+
+  @media (max-width: $mobile-width) {
+    border: none;
+    width: 100%;
+  }
+}
+
 .address__header {
   font-size: 54px;
   line-height: 65px;
   font-weight: 600;
-  font-family: "Alumni Sans";
+  font-family: "Alumni Sans", "Arial", sans-serif;
   margin: 0 0 35px 0;
   letter-spacing: 1px;
 
@@ -15,15 +25,5 @@
   @media (max-width: $mobile-width) {
     font-size: 32px;
     line-height: 38px;
-  }
-}
-
-.address {
-  border-top: solid 1px #74819c;
-  margin: 0;
-
-  @media (max-width: $mobile-width) {
-    border: none;
-    width: 100%;
   }
 }

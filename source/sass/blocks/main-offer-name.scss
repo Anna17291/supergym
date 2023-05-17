@@ -3,7 +3,7 @@
   line-height: 58px;
   margin: 0 0 10px 0;
   padding-right: 50px;
-  font-family: "Alumni Sans";
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   letter-spacing: 3px;
 
@@ -49,7 +49,7 @@
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   letter-spacing: 0.3px;
 
   @media (max-width: $tablet-width) {

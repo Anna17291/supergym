@@ -1,6 +1,7 @@
 .advantages-item {
   list-style-type: none;
   display: flex;
+  position: relative;
 
   @media (max-width: $mobile-width) {
     margin-bottom: 9px;
@@ -12,7 +13,6 @@
   align-items: start;
   min-height: 150px;
   padding-top: 45px;
-  position: relative;
 
   @media (max-width: $tablet-width) {
     padding-top: 0;
