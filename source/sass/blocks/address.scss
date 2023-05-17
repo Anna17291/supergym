@@ -11,9 +11,19 @@
     line-height: 50px;
     margin-bottom: 33px;
   }
+
+  @media (max-width: $mobile-width) {
+    font-size: 32px;
+    line-height: 38px;
+  }
 }
 
 .address {
   border-top: solid 1px #74819c;
   margin: 0;
+
+  @media (max-width: $mobile-width) {
+    border: none;
+    width: 100%;
+  }
 }

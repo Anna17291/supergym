@@ -6,7 +6,19 @@
   flex-wrap: wrap;
   padding: 0;
 
+  @media (max-width: $mobile-width) {
+    display: block;
+    column-count: 2;
+    column-gap: 10%;
+    margin: 0;
+  }
+}
 
+.navigation-list__item {
+  @media (max-width: $mobile-width) {
+    margin-bottom: 19px;
+    display: block;
+  }
 }
 
 .navigation-list__item:not(:last-child) {
@@ -19,4 +31,11 @@
 
 .footer-navigation__wrapper {
   width: 100%;
+}
+
+.navigation-list__item:nth-child(1) {
+
+  @media (max-width: $mobile-width) {
+    margin-top: 40px;
+  }
 }

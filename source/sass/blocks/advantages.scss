@@ -11,7 +11,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding: 57px 0;
+    padding: 57px 0 45px;
   }
 }
 
@@ -51,6 +51,7 @@
     font-size: 32px;
     line-height: 38px;
     letter-spacing: 1px;
+    margin-bottom: 20px;
   }
 }
 
@@ -66,12 +67,14 @@
   @media (max-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
     column-gap: 33px;
-    row-gap: 15px;
+    row-gap: 30px;
+
   }
 
   @media (max-width: $mobile-width) {
     display: flex;
     flex-direction: column;
+    row-gap: 0;
   }
 }
 

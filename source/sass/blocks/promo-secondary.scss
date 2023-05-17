@@ -12,6 +12,12 @@
   @media (max-width: $tablet-width) {
     padding: 22px 28px 30px;
   }
+
+  @media (max-width: $mobile-width) {
+    min-height: 211px;
+    text-align: center;
+    padding: 33px 30px 40px;
+  }
 }
 
 .promo-secondary__header {
@@ -37,4 +43,5 @@
 
 .promo-secondary__description {
   margin: 0;
+  padding-bottom: 15px;
 }

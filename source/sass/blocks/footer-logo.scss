@@ -9,4 +9,9 @@
     height: 18px;
     margin-bottom: 5px;
   }
+
+  @media (max-width: $mobile-width) {
+    width: 68px;
+    height: 15px;
+  }
 }

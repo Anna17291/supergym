@@ -3,10 +3,25 @@
   line-height: 30px;
   font-weight: 700;
   margin: 0 0 10px 0;
+
+  @media (max-width: $mobile-width) {
+    padding-left: 98px;
+    display: flex;
+    padding-top: 20px;
+    line-height: 26px;
+    margin-bottom: 17px;
+    text-align: left;
+    min-height: 80px;
+    align-items: center;
+  }
 }
 
 .feedback-text__message {
   font-weight: 400;
   line-height: 23px;
   margin: 0;
+
+  @media (max-width: $mobile-width) {
+    line-height: 23px;
+  }
 }

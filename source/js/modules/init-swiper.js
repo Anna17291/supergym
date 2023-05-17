@@ -10,6 +10,7 @@ export const initSwiper = () => {
       320: {
         slidesPerView: 1,
         slidesPerGroup: 1,
+        spaceBetween: 40,
       },
 
       768: {
@@ -26,10 +27,23 @@ export const initSwiper = () => {
     },
     // Navigation arrows
     navigation: {
-      prevEl: '.swiper-button-prev',
-      nextEl: '.swiper-button-next',
+      prevEl: '.coachs__button--prev',
+      nextEl: '.coachs__button--next',
     },
   });
 };
 
 
+export const initSwiperFeedback = () => {
+  const coachSwiper = new Swiper('.feedback-slider', {// eslint-disable-line
+    direction: 'horizontal',
+
+    slidesPerView: 1,
+
+    // Navigation arrows
+    navigation: {
+      prevEl: '.feedback__button--prev',
+      nextEl: '.feedback__button--next',
+    },
+  });
+};

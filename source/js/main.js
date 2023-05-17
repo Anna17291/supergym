@@ -4,9 +4,14 @@ import { Form } from './modules/form-validate/form';
 
 
 import { initSwiper } from './modules/init-swiper';
+import { initSwiperFeedback } from './modules/init-swiper';
+import { openCloseProducts } from './modules/products';
+import { playVideo } from './modules/play-video';
+
 initSwiper();
-
-
+initSwiperFeedback();
+openCloseProducts();
+playVideo();
 
 // ---------------------------------
 

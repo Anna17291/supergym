@@ -76,7 +76,7 @@
   top: 65%
 }
 
-.swiper-button-prev {
+.coachs__button--prev {
   left: -50px;
 
   @media (max-width: $tablet-width) {
@@ -85,7 +85,7 @@
   }
 }
 
-.swiper-button-next {
+.coachs__button--next {
   right: -30px;
 
   @media (max-width: $tablet-width) {
