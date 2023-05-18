@@ -20,6 +20,12 @@ export const initSwiper = () => {
       },
 
       1200: {
+        slidesPerView: 3,
+        slidesPerGroup: 1,
+        spaceBetween: 40,
+      },
+
+      1300: {
         slidesPerView: 4,
         slidesPerGroup: 1,
         spaceBetween: 40,

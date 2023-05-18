@@ -90,10 +90,10 @@
   content: "";
   background-image: url("../img/disks.png");
   background-repeat: no-repeat;
-  bottom: -70px;
-  right: -35px;
-  width: 321px;
-  height: 412px;
+  bottom: -145px;
+  right: 0;
+  width: 287px;
+  height: 494px;
   z-index: 2;
   position: absolute;
 
@@ -103,11 +103,11 @@
   }
 
   @media (max-width: $tablet-width) {
-    bottom: -60px;
+    bottom: -125px;
     right: 0;
     background-image: url("../img/disks-tablet.png");
-    width: 350px;
-    height: 378px;
+    width: 347px;
+    height: 444px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/disks-tablet-2x.png");

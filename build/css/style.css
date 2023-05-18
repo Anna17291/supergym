@@ -2741,10 +2741,10 @@ body {
   content: "";
   background-image: url("../img/disks.png");
   background-repeat: no-repeat;
-  bottom: -70px;
-  right: -35px;
-  width: 321px;
-  height: 412px;
+  bottom: -145px;
+  right: 0;
+  width: 287px;
+  height: 494px;
   z-index: 2;
   position: absolute;
 }
@@ -2756,11 +2756,11 @@ body {
 }
 @media (max-width: 1199px) {
   .main-products::after {
-    bottom: -60px;
+    bottom: -125px;
     right: 0;
     background-image: url("../img/disks-tablet.png");
-    width: 350px;
-    height: 378px;
+    width: 347px;
+    height: 444px;
   }
 }
 @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1199px) and (min-resolution: 2dppx) {
@@ -2975,6 +2975,7 @@ body {
   }
 }
 .terms-item__button:hover, .terms-item__button:focus {
+  color: #ffffff;
   background: -webkit-gradient(linear, right bottom, left top, color-stop(100%, #ed0233), color-stop(-65%, #003eb7));
   background: -o-linear-gradient(bottom right, #ed0233 100% 45deg, #003eb7 -65% -45deg);
   background: linear-gradient(to top left, #ed0233 100% 45deg, #003eb7 -65% -45deg);
@@ -3319,6 +3320,11 @@ body {
   padding-top: 48px;
   position: relative;
 }
+@media (max-width: 1300px) {
+  .coachs__wrapper {
+    max-width: 800px;
+  }
+}
 @media (max-width: 1199px) {
   .coachs__wrapper {
     padding: 35px;
@@ -3332,11 +3338,13 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    max-width: 660px;
   }
 }
 @media (max-width: 767px) {
   .coachs__wrapper {
-    padding: 20px;
+    padding: 20px 0;
+    max-width: 70vw;
   }
 }
 
@@ -3350,6 +3358,11 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   padding: 0;
+}
+@media (max-width: 1300px) {
+  .coachs__list {
+    max-width: 800px;
+  }
 }
 @media (max-width: 1199px) {
   .coachs__list {
@@ -3397,13 +3410,13 @@ body {
 }
 @media (max-width: 1199px) {
   .coachs__button--prev {
-    left: 35px;
+    left: -10px;
     top: 57%;
   }
 }
 @media (max-width: 767px) {
   .coachs__button--prev {
-    left: 5px;
+    left: -35px;
     top: 58%;
   }
 }
@@ -3434,7 +3447,13 @@ body {
 }
 @media (max-width: 1199px) {
   .coachs__button--next {
-    right: 5px;
+    right: -10px;
+    top: 57%;
+  }
+}
+@media (max-width: 767px) {
+  .coachs__button--next {
+    right: -35px;
     top: 58%;
   }
 }
@@ -5165,7 +5184,7 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: #ffffff;
+  background-color: #3b3c63;
   background-image: url("../img/video-image.webp");
   background-size: cover;
   background-repeat: no-repeat;
@@ -5196,8 +5215,8 @@ body {
 .media-video__button::before {
   width: 100px;
   height: 100px;
-  top: 55%;
-  left: 35%;
+  top: 50%;
+  left: 36%;
   -webkit-transform: translateX(50%);
       -ms-transform: translateX(50%);
           transform: translateX(50%);
