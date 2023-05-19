@@ -1,7 +1,7 @@
 import Swiper from '../vendor/swiper';
 
 export const initSwiper = () => {
-  const coachSwiper = new Swiper('.coachs-slider', {// eslint-disable-line
+  const coachSwiper = new Swiper('.coachs-slider', {
     direction: 'horizontal',
     loop: true,
 
@@ -30,6 +30,7 @@ export const initSwiper = () => {
         slidesPerGroup: 1,
         spaceBetween: 40,
       },
+
     },
 
     navigation: {
@@ -37,11 +38,12 @@ export const initSwiper = () => {
       nextEl: '.coachs__button--next',
     },
   });
+
+  return coachSwiper;
 };
 
 export const initSwiperFeedback = () => {
-  const coachSwiper = new Swiper('.feedback-slider', {// eslint-disable-line
-    direction: 'horizontal',
+  const feedbackSwiper = new Swiper('.feedback-slider', {
     slidesPerView: 1,
 
     navigation: {
@@ -49,4 +51,6 @@ export const initSwiperFeedback = () => {
       nextEl: '.feedback__button--next',
     },
   });
+
+  return feedbackSwiper;
 };

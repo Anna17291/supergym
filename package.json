@@ -9,6 +9,7 @@
     "Firefox ESR"
   ],
   "scripts": {
+    "deploy": "gulp build && gh-pages -d build",
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --customSyntax postcss-scss",
     "test": "npm run editorconfig & npm run stylelint & eslint source/js/",
@@ -36,6 +37,7 @@
     "browserify": "17.0.0",
     "del": "6.1.1",
     "eslint": "7.32.0",
+    "gh-pages": "^5.0.0",
     "gulp": "4.0.2",
     "gulp-concat": "2.6.1",
     "gulp-csso": "4.0.1",
