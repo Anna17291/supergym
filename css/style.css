@@ -2333,6 +2333,10 @@ body {
   text-transform: uppercase;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   letter-spacing: 0.3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .main-offer-name__button:hover,
@@ -2387,6 +2391,7 @@ body {
 .company-description__paragraph {
   margin: 0 0 10px 0;
   line-height: 24px;
+  font-weight: 300;
 }
 
 .company-description__text {
@@ -2502,6 +2507,11 @@ body {
   cursor: pointer;
 }
 
+.length-item__button:hover,
+.length-item__button:focus {
+  color: #102654;
+}
+
 .length-item:not(:last-child) {
   margin-right: 46px;
 }
@@ -2591,6 +2601,10 @@ body {
   padding: 10px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .terms-item__button:hover,
@@ -2694,6 +2708,10 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-weight: 700;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .events-text__button:hover {
@@ -2848,7 +2866,7 @@ body {
 }
 
 .coachs__button--prev {
-  left: -50px;
+  left: -60px;
 }
 
 .coachs__button--prev::before {
@@ -2864,10 +2882,17 @@ body {
   border-top: none;
   border-right: none;
   cursor: pointer;
+  left: 8px;
+}
+
+.coachs__button--prev:hover::before {
+  border: solid 1px #102654;
+  border-top: none;
+  border-right: none;
 }
 
 .coachs__button--next {
-  right: -50px;
+  right: -60px;
 }
 
 .coachs__button--next::before {
@@ -2883,6 +2908,13 @@ body {
   border-bottom: none;
   border-left: none;
   cursor: pointer;
+  right: 8px;
+}
+
+.coachs__button--next:hover::before {
+  border: solid 1px #102654;
+  border-bottom: none;
+  border-left: none;
 }
 
 .coachs-item {
@@ -2910,12 +2942,18 @@ body {
   height: 100%;
 }
 
-.coachs-item:hover .coachs-item__name {
-  visibility: hidden;
+.coachs-item:hover .coachs-item__name,
+.coachs-item:active .coachs-item__name,
+.coachs-item:focus .coachs-item__name {
+  display: none;
 }
 
-.coachs-item:hover .coach-text {
-  visibility: visible;
+.coachs-item:hover .coach-text,
+.coachs-item:active .coach-text,
+.coachs-item:focus .coach-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .coachs-item__image {
@@ -2930,19 +2968,17 @@ body {
   padding: 52px 40px 25px 56px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  visibility: hidden;
+  display: none;
   position: absolute;
   top: 0;
   background-color: rgba(16, 38, 84, 0.89);
   bottom: 0;
   overflow-y: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  width: 100%;
 }
 
 .coach-text__specefications {
@@ -2956,6 +2992,9 @@ body {
   margin: 0;
   font-size: 18px;
   line-height: 27px;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .coach-text__description {
@@ -3239,6 +3278,12 @@ body {
   line-height: 16px;
   font-weight: 700;
   letter-spacing: 1px;
+  margin-right: auto;
+}
+
+.promo-main__button:hover,
+.promo-main__button:focus {
+  color: #102654;
 }
 
 .promo-secondary {
@@ -3274,6 +3319,12 @@ body {
   font-size: 12px;
   line-height: 14px;
   margin-top: auto;
+  margin-right: auto;
+}
+
+.promo-secondary__link:hover,
+.promo-secondary__link:focus {
+  color: #ed0233;
 }
 
 .promo-secondary__description {
@@ -3486,6 +3537,10 @@ body {
   line-height: 16px;
   font-weight: 700;
   letter-spacing: 1px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .form-container button:hover,
@@ -3500,14 +3555,39 @@ body {
   padding-top: 5px;
   background-color: transparent;
   border: 0;
-  -webkit-box-shadow: 0 1px 0 #74819c;
-  box-shadow: 0 1px 0 #74819c;
+  border-bottom: solid 1px #74819c;
   color: #ffffff;
   opacity: 1;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
 }
+
+.form-container input:hover,
+.form-container input:focus {
+  background-color: rgba(61, 103, 186, 0.8);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #FFFFFF;
+  -webkit-box-shadow: 0 0 0px 100px #102654 inset;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/*
+
+.form-container input:-webkit-autofill,
+.form-container input:-webkit-autofill:hover,
+.form-container input:-webkit-autofill:active,
+.form-container input:-webkit-autofill:focus {
+  transition: background-color 5000s ease-in-out 0s;
+  background-color: #ffffff;
+  color: #ffffff;
+}
+*/
 
 .form-container input::-webkit-input-placeholder {
   color: #ffffff;
@@ -3543,6 +3623,7 @@ body {
 
 .form-container fieldset div {
   width: 47%;
+  position: relative;
 }
 
 .form-container div span {
@@ -3610,6 +3691,19 @@ body {
   margin: 0 0 5px 0;
   font-size: 16px;
   line-height: 24px;
+}
+
+.address-list-item__value--interactive {
+  margin-right: auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 170px;
+}
+
+.address-list-item__value--interactive:hover,
+.address-list-item__value--interactive:focus {
+  color: #ed0233;
 }
 
 .main-footer {
@@ -3764,14 +3858,22 @@ body {
   left: 0;
 }
 
-.media-video__button::before {
+.media-video__button[type=button]:hover + .media-video__toggle {
+  opacity: 0.5;
+}
+
+.media-video__toggle:hover {
+  opacity: 0.5;
+}
+
+.media-video__toggle {
   width: 100px;
   height: 100px;
   top: 50%;
   left: 36%;
-  -webkit-transform: translateX(50%);
-  -ms-transform: translateX(50%);
-  transform: translateX(50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -3790,6 +3892,14 @@ body {
 .media-video__video iframe {
   width: 100%;
   height: 100%;
+}
+
+.input-message {
+  font-size: 10px;
+  line-height: 11px;
+  position: absolute;
+  bottom: -18px;
+  left: 0;
 }
 
 /* @mixin hover-focus {
@@ -4440,7 +4550,7 @@ body {
     height: 17px;
   }
 
-  .media-video__button::before {
+  .media-video__toggle {
     width: 73px;
     height: 73px;
     background-size: contain;
@@ -4727,7 +4837,6 @@ body {
   }
 
   .coachs-item {
-    max-width: 70vw;
     aspect-ratio: 1/1.23;
   }
 

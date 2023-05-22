@@ -53,7 +53,7 @@
             <div class="main-offer__name main-offer-name">
               <h3 class="main-offer-name__location">Омск</h3>
               <h2 class="main-offer-name__company">Фитнес<br>центр</h2>
-              <a class="main-offer-name__button" href="#main-products">Купить абонемент</a>
+              <a class="main-offer-name__button" href="#main-products" noselect>Купить абонемент</a>
             </div>
             <img class="main-offer__image" src="img/main-offer.webp" srcset="img/main-offer-2x.webp 2x" loading="lazy"
               alt="Фотография спортсмена." width="500" height="556">
@@ -88,7 +88,11 @@
                   <div class="media-video__video" data-video-container
                     data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
                   </div>
-                  <button class="media-video__button"></button>
+                  <button class="media-video__button" type="button"></button>
+
+                  <div class="media-video__toggle"></div>
+
+
                 </div>
               </div>
             </div>
@@ -115,21 +119,23 @@
                 <h3 class="terms-item__header">С тренером</h3>
                 <p class="terms-item__description">12 занятий</p>
                 <p class="terms-item__price terms-price" data-shadow="5000"><span class="terms-price__number">5000
-                  </span>₽</p>
+                  </span>
+                  &#8381;
+                </p>
                 <a class="terms-item__button" href="#">Купить абонемент</a>
               </li>
               <li class="terms-list__item terms-item" tabindex="0">
                 <h3 class="terms-item__header">Дневной</h3>
                 <p class="terms-item__description">С 8:00 до 17:00</p>
                 <p class="terms-item__price terms-price" data-shadow="1700"><span class="terms-price__number">1700
-                  </span>₽</p>
+                  </span>&#8381;</p>
                 <a class="terms-item__button" href="#">Купить абонемент</a>
               </li>
               <li class="terms-list__item terms-item" tabindex="0">
                 <h3 class="terms-item__header">Полный день</h3>
                 <p class="terms-item__description">С 8:00 до 22:00</p>
                 <p class="terms-item__price terms-price" data-shadow="2700"><span class="terms-price__number">2700
-                  </span>₽</p>
+                  </span>&#8381;</p>
                 <a class="terms-item__button" href="#">Купить абонемент</a>
               </li>
             </ul>
@@ -138,21 +144,21 @@
                 <h3 class="terms-item__header">С тренером</h3>
                 <p class="terms-item__description">72 занятия</p>
                 <p class="terms-item__price terms-price" data-shadow="20 000"><span class="terms-price__number">20
-                    000</span>₽</p>
+                    000</span>&#8381;</p>
                 <a class="terms-item__button" href="#">Купить абонемент</a>
               </li>
               <li class="terms-list__item terms-item" tabindex="0">
                 <h3 class="terms-item__header">Дневной</h3>
                 <p class="terms-item__description">С 8:00 до 17:00</p>
                 <p class="terms-item__price terms-price" data-shadow="12 500"><span class="terms-price__number">12 500
-                  </span>₽</p>
+                  </span>&#8381;</p>
                 <a class="terms-item__button" href="#">Купить абонемент</a>
               </li>
               <li class="terms-list__item terms-item" tabindex="0">
                 <h3 class="terms-item__header">Полный день</h3>
                 <p class="terms-item__description">С 8:00 до 22:00</p>
                 <p class="terms-item__price terms-price" data-shadow="17 500"><span class="terms-price__number">17 500
-                  </span>₽</p>
+                  </span>&#8381;</p>
                 <a class="terms-item__button" href="#">Купить абонемент</a>
               </li>
             </ul>
@@ -161,21 +167,21 @@
                 <h3 class="terms-item__header">С тренером</h3>
                 <p class="terms-item__description">144 занятия</p>
                 <p class="terms-item__price terms-price" data-shadow="33 000"><span class="terms-price__number">33 000
-                  </span>₽</p>
+                  </span>&#8381;</p>
                 <a class="terms-item__button" href="#">Купить абонемент</a>
               </li>
               <li class="terms-list__item terms-item" tabindex="0">
                 <h3 class="terms-item__header">Дневной</h3>
                 <p class="terms-item__description">С 8:00 до 17:00</p>
                 <p class="terms-item__price terms-price" data-shadow="17 800"><span class="terms-price__number">17 800
-                  </span>₽</p>
+                  </span>&#8381;</p>
                 <a class="terms-item__button" href="#">Купить абонемент</a>
               </li>
               <li class="terms-list__item terms-item" tabindex="0">
                 <h3 class="terms-item__header">Полный день</h3>
                 <p class="terms-item__description">С 8:00 до 22:00</p>
                 <p class="terms-item__price terms-price" data-shadow="24 150"><span class="terms-price__number">24 150
-                  </span>₽</p>
+                  </span>&#8381;</p>
                 <a class="terms-item__button" href="#">Купить абонемент</a>
               </li>
             </ul>
@@ -542,7 +548,7 @@
                 </li>
                 <li class="address-list__item address-list-item address-list-item--2">
                   <h3 class="address-list-item__point">Телефон:</h3>
-                  <a class="address-list-item__value" href="tel:88005555555">
+                  <a class="address-list-item__value address-list-item__value--interactive" href="tel:88005555555">
                     8-800-555-55-55</a>
                 </li>
                 <li class="address-list__item address-list-item address-list-item--3">
@@ -551,7 +557,8 @@
                 </li>
                 <li class="address-list__item address-list-item address-list-item--4">
                   <h3 class="address-list-item__point">Email:</h3>
-                  <a class="address-list-item__value" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                  <a class="address-list-item__value address-list-item__value--interactive"
+                    href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
                 </li>
               </ul>
             </div>
