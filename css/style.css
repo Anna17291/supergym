@@ -4836,10 +4836,6 @@ input:-webkit-autofill:focus {
     height: 15px;
   }
 
-  .coachs-item {
-    aspect-ratio: 1/1.23;
-  }
-
   .coach-text {
     padding: 42px 33px;
   }
