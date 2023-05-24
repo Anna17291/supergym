@@ -35,12 +35,20 @@
   left: 0;
 }
 
-.media-video__button::before {
+.media-video__button[type="button"]:hover+.media-video__toggle {
+  opacity: 0.5;
+}
+
+.media-video__toggle:hover {
+  opacity: 0.5;
+}
+
+.media-video__toggle {
   width: 100px;
   height: 100px;
   top: 50%;
   left: 36%;
-  transform: translateX(50%);
+  transform: translateX(-50%);
   transform: translateY(-50%);
   background-image: url("../img/svg/button-video.svg");
   background-repeat: no-repeat;
@@ -52,6 +60,9 @@
     width: 73px;
     height: 73px;
     background-size: contain;
+  }
+
+  @media (max-width: $mobile-width) {
     left: 40%;
   }
 }

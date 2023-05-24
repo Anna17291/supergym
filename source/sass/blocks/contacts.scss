@@ -22,12 +22,16 @@
 
 .contacts__form {
   background-color: #102654;
-  padding: 56px 170px 70px 20px;
+
 }
 
 .contacts__address {
   background-color: #ffffff;
   padding: 56px 20px 30px 125px;
+
+  @media (max-width: 1365px) {
+    padding-left: 18%;
+  }
 
   @media (max-width: $tablet-width) {
     padding: 60px 20px 20px 133px;

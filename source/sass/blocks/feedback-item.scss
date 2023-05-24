@@ -8,8 +8,9 @@
 
   @media (max-width: $mobile-width) {
     position: absolute;
+    left: 50%;
+    transform: translateX(-100%);
     top: 37px;
-    left: 40px;
     width: 68px;
     height: 68px;
   }

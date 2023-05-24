@@ -23,6 +23,17 @@
   }
 }
 
+.address-list-item__value--interactive {
+  margin-right: auto;
+  width: max-content;
+  max-width: 170px;
+
+  &:hover,
+  &:focus {
+    color: #ed0233;
+  }
+}
+
 .address-list-item--1 {
   @media (max-width: $mobile-width) {
     order: 1;

@@ -9,7 +9,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding: 70px 10px 35px;
+    padding: 70px 10px 30px;
   }
 }
 
@@ -36,13 +36,15 @@
   column-gap: 60px;
 
   @media (max-width: $tablet-width) {
-    padding: 49px 45px;
+    padding: 48px 45px;
     column-gap: 35px;
+    grid-template-columns: 2fr 0.9fr;
   }
 
   @media (max-width: $mobile-width) {
     width: 100%;
     padding-top: 47px;
+    min-height: 292px;
   }
 }
 

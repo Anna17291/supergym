@@ -4,6 +4,8 @@ export const initSwiper = () => {
   const coachSwiper = new Swiper('.coachs-slider', {
     direction: 'horizontal',
     loop: true,
+    initialSlide: -4,
+    iOSEdgeSwipeDetection: true,
 
     breakpoints: {
 

@@ -1,19 +1,24 @@
 .main-header {
-  position: absolute;
-  background-color: transparent;
   width: 100%;
-  padding: 30px 10px 0;
-  z-index: 1;
-  min-height: 74px;
+  padding: 30px 10px;
+  min-width: 100%;
+  min-height: 658px;
+  background: conic-gradient(from 150.87deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
 
   @media (max-width: $tablet-width) {
-    padding: 30px 45px;
-    min-height: 54px;
+    min-height: 554px;
+    background: conic-gradient(from 155.49deg at 20.7% 35.74%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+    padding: 27px 45px 30px 45px;
   }
 
   @media (max-width: $mobile-width) {
-    padding: 10px 15px;
-    align-items: baseline;
+    background: conic-gradient(from 167.26deg at 35.31% 34.22%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+    padding-top: 10px;
+    min-height: 491px;
+    height: auto;
+    padding-bottom: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -23,6 +28,15 @@
   flex-direction: row;
   justify-content: space-between;
   margin: 0 auto;
+  position: relative;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column-reverse;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column-reverse;
+  }
 }
 
 .main-header__phone {
@@ -30,4 +44,12 @@
   line-height: 31px;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
+
+  @media (max-width: $tablet-width) {
+    align-self: flex-end;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-right: 5px;
+  }
 }

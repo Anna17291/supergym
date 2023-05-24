@@ -5,6 +5,12 @@
   font-weight: 600;
   font-family: "Alumni Sans", "Arial", sans-serif;
   letter-spacing: 0.8px;
+  display: block;
+
+
+  //margin-bottom: 15px;
+  //display: flex;
+  //flex-direction: row;
 
   @media (max-width: $tablet-width) {
     font-size: 24px;
@@ -25,6 +31,13 @@
 }
 
 .header-phone {
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 8px;
+    display: block;
+    position: relative;
+  }
+
   @media (max-width: $tablet-width) {
     margin-top: 2px;
   }

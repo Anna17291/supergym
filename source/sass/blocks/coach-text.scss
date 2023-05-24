@@ -2,14 +2,16 @@
   color: #ffffff;
   padding: 52px 40px 25px 56px;
   box-sizing: border-box;
-  visibility: hidden;
+  //visibility: hidden;
+  display: none;
   position: absolute;
   top: 0;
   background-color: rgba(16, 38, 84, 0.89);
   bottom: 0;
   overflow-y: auto;
-  display: flex;
+  //display: flex;
   flex-direction: column;
+  width: 100%;
 
   @media (max-width: $tablet-width) {
     text-align: start;
@@ -31,6 +33,7 @@
   margin: 0;
   font-size: 18px;
   line-height: 27px;
+  align-self: center;
 
   @media (max-width: $mobile-width) {
     margin-bottom: -5px;

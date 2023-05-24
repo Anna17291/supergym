@@ -118,7 +118,8 @@
 
 .advantages-item__header {
   color: transparent;
-  background: linear-gradient(to bottom right, #d10a42 20%, #0041ca 35%);
+  //background: linear-gradient(to bottom right, #d10a42 20%, #0041ca 35%);
+  background: linear-gradient(142.51deg, #D10A42 0%, #0041CA 87.33%);
   -webkit-background-clip: text;
   background-clip: text;
   font-size: 71px;
@@ -205,6 +206,12 @@
   @media (max-width: $mobile-width) {
     order: 1;
   }
+}
+
+.advantages-item--1 .advantages-item__header {
+  background: linear-gradient(127.61deg, #D10A42 0%, #0041CA 45.58%);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .advantages-item--2 {

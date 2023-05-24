@@ -1,8 +1,8 @@
 .main-offer-name__location {
   font-size: 40px;
   line-height: 58px;
-  margin: 0 0 10px 0;
-  padding-right: 50px;
+  margin: 0 0 13px 0;
+  padding-right: 45px;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   letter-spacing: 3px;
@@ -10,8 +10,9 @@
   @media (max-width: $tablet-width) {
     font-size: 28px;
     line-height: 40px;
-    padding-right: 0;
+    padding-right: 3px;
     margin-bottom: 5px;
+    letter-spacing: 2px;
   }
 
   @media (max-width: $mobile-width) {
@@ -23,17 +24,23 @@
 }
 
 .main-offer-name__company {
-  font-size: 92px;
+  font-size: 96px;
   line-height: 110px;
   margin: 0 0 50px 0;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   text-align: right;
+  font-family: "Alumni Sans", "Arial", sans-serif;
 
   @media (max-width: $tablet-width) {
     font-size: 74px;
     line-height: 86px;
     text-transform: none;
     letter-spacing: 2px;
+    margin-bottom: 35px;
+    //padding-top: 1px;
+  }
+
+  @media (max-width: $mobile-width) {
     margin-bottom: 40px;
   }
 }
@@ -42,19 +49,29 @@
   color: inherit;
   font-size: 12px;
   line-height: 14px;
-  width: 230px;
-  min-height: 57px;
+  width: 233px;
+  min-height: 60px;
   border: #ffffff 4px solid;
   display: flex;
+  margin-right: -5px;
   align-items: center;
   justify-content: center;
+  text-align: center;
   text-transform: uppercase;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.5px;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 5px;
 
   @media (max-width: $tablet-width) {
-    width: 183px;
+    width: 187px;
     min-height: 60px;
+    align-self: center;
+    padding: 10px 10px 5px 5px;
   }
 
   @media (max-width: $mobile-width) {
@@ -63,7 +80,7 @@
     width: 98%;
     left: 1%;
     min-height: 63px;
-    padding-top: 5px;
+    padding: 5px;
     box-sizing: border-box;
     letter-spacing: 0.5px;
   }

@@ -1,8 +1,19 @@
 .header-logo {
   margin-top: 10px;
 
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @media (max-width: $tablet-width) {
+    top: 3px;
+    //left: 10px;
+  }
+
   @media (max-width: $mobile-width) {
-    margin-top: 5px;
+    //margin-top: 5px;
+    top: -5px;
+    left: 3px;
   }
 }
 
